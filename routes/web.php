@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+Auth::routes();
+
+// Route::match(['GET', 'POST'], '/register', function(){
+//     return redirect('/login');
+// });
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/guest', [App\Http\Controllers\GuestController::class, 'index'])->name('guestHome');
+
+Route::get('/lensa', 'GlobalController@lensaIndex')->name('lensaIndex');
+Route::post('/lensa/save', 'GlobalController@lensaSave')->name('lensaSave');
+Route::get('/lensa/{id}', 'GlobalController@lensaGetData')->name('lensaGetData');
+Route::get('/lensa/delete/{id}', 'GlobalController@lensaDelete')->name('lensaDelete');
+
+Route::get('/frame', 'GlobalController@frameIndex')->name('frameIndex');
+Route::post('/frame/save', 'GlobalController@frameSave')->name('frameSave');
+Route::get('/frame/{id}', 'GlobalController@frameGetData')->name('frameGetData');
+Route::get('/frame/delete/{id}', 'GlobalController@frameDelete')->name('frameDelete');
+
+Route::get('/about', 'GlovalController@aboutIndex')->name('aboutIndex');
+Route::post('/about/save', 'GlobalController@aboutSave')->name('aboutSave');
