@@ -6,6 +6,11 @@
             <h3 class="page__heading">Data Lensa</h3>
         </div>
         <div class="section-body">
+            @if(session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
@@ -75,7 +80,7 @@
                             </div>
     
                             <div class="form-group col-md-6">
-                                <label for="price">Nama Lensa</label>
+                                <label for="price">Harga Lensa</label>
                                 <input type="number" class="form-control" id="price" name="price" required>
                             </div>
     

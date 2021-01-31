@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Frame extends Model
 {
-    //
+    protected $table = 'tblframe';
 }

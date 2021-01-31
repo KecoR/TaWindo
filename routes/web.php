@@ -39,5 +39,10 @@ Route::post('/frame/save', 'GlobalController@frameSave')->name('frameSave');
 Route::get('/frame/{id}', 'GlobalController@frameGetData')->name('frameGetData');
 Route::get('/frame/delete/{id}', 'GlobalController@frameDelete')->name('frameDelete');
 
-Route::get('/about', 'GlovalController@aboutIndex')->name('aboutIndex');
+Route::get('/about', 'GlobalController@aboutIndex')->name('aboutIndex');
 Route::post('/about/save', 'GlobalController@aboutSave')->name('aboutSave');
+
+Route::get('/order', 'GLobalController@orderIndex')->name('orderIndex');
+Route::get('/newOrder', 'GLobalController@newOrderIndex')->name('newOrderIndex');
+Route::get('/detailOrder/{id}', 'GLobalController@detailOrderIndex')->name('detailOrderIndex');
+Route::post('/orderSave', 'GlobalController@orderSave')->name('orderSave');

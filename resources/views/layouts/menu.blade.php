@@ -20,4 +20,24 @@
         <i class=" fas fa-glasses"></i><span>Daftar Frame Kacamata</span>
         </a>
     </li>
+
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('orderIndex') }}" class="nav-link">
+        <i class=" fas fa-shopping-basket"></i><span>Pemesanan Kacamata</span>
+        </a>
+    </li>
 @endif
+
+@if (!\Auth::user())
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('newOrderIndex') }}" class="nav-link">
+        <i class=" fas fa-shopping-basket"></i><span>Pemesanan Kacamata</span>
+        </a>
+    </li>
+@endif
+
+<li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+    <a href="{{ route('aboutIndex') }}" class="nav-link">
+    <i class="fas fa-user"></i><span>Informasi Kontak Ahli Kacamata</span>
+    </a>
+</li>
