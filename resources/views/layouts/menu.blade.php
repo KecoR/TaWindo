@@ -34,6 +34,16 @@
         <i class=" fas fa-shopping-basket"></i><span>Pemesanan Kacamata</span>
         </a>
     </li>
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('newOrderIndex') }}" class="nav-link">
+        <i class=" fas fa-shopping-basket"></i><span>Pemeriksaan mata minus</span>
+        </a>
+    </li>
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('newOrderIndex') }}" class="nav-link">
+        <i class=" fas fa-shopping-basket"></i><span>Pemeriksaan mata plus</span>
+        </a>
+    </li>
 @endif
 
 <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
