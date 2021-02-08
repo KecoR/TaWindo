@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <a href="{{ route('guestHome') }}" class="btn btn-secondary btn-lg btn-block">Login as Guest</a>
+                    <a href="{{ route('guestHome') }}" class="btn btn-info btn-lg btn-block">Login as Guest</a>
                 </div>
             </form>
         </div>
