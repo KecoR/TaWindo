@@ -35,13 +35,13 @@
         </a>
     </li>
     <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
-        <a href="{{ route('newOrderIndex') }}" class="nav-link">
-        <i class=" fas fa-shopping-basket"></i><span>Pemeriksaan mata minus</span>
+        <a href="{{ route('mataMinus') }}" class="nav-link">
+        <i class="fas fa-eye"></i><span>Pemeriksaan mata minus</span>
         </a>
     </li>
     <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
-        <a href="{{ route('newOrderIndex') }}" class="nav-link">
-        <i class=" fas fa-shopping-basket"></i><span>Pemeriksaan mata plus</span>
+        <a href="{{ route('mataPlus') }}" class="nav-link">
+        <i class="fas fa-eye"></i><span>Pemeriksaan mata plus</span>
         </a>
     </li>
 @endif

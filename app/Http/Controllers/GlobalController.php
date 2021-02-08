@@ -234,6 +234,14 @@ class GlobalController extends Controller
         return view('detailorder', ['orderData' => $orderData, 'bank' => $aboutData->bank, 'no_rek' => $aboutData->no_rek]);
     }
 
+    public function mataMinus() {
+        return view('mataMinus');
+    }
+
+    public function mataPlus() {
+        return view('mataPlus');
+    }
+
     //Section Custom Function
     private function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
