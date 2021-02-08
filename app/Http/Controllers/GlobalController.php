@@ -235,11 +235,11 @@ class GlobalController extends Controller
     }
 
     public function mataMinus() {
-        return view('mataMinus');
+        return view('mataminus');
     }
 
     public function mataPlus() {
-        return view('mataPlus');
+        return view('mataplus');
     }
 
     //Section Custom Function
