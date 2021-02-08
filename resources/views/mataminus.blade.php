@@ -97,7 +97,7 @@
 
             step += 1;
 
-            if (step > 9) {
+            if (step > 8) {
                 $(".card-test").addClass('d-none');
                 $(".card-no-minus").removeClass('d-none');
             } else {
