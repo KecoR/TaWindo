@@ -44,7 +44,7 @@ Route::post('/about/save', 'GlobalController@aboutSave')->name('aboutSave');
 
 Route::get('/order', 'GlobalController@orderIndex')->name('orderIndex');
 Route::get('/newOrder', 'GlobalController@newOrderIndex')->name('newOrderIndex');
-Route::get('/detailOrder/{id}', 'GLobalController@detailOrderIndex')->name('detailOrderIndex');
+Route::get('/detailOrder/{id}', 'GlobalController@detailOrderIndex')->name('detailOrderIndex');
 Route::post('/orderSave', 'GlobalController@orderSave')->name('orderSave');
 
 Route::get('/mataMinus', 'GlobalController@mataMinus')->name('mataMinus');
