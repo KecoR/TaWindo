@@ -74,7 +74,7 @@
             var umur = $("#umur").val();
             var plue = getPlus(umur);
 
-            var text = `Mata anda terindikasi +${plus}, harap segera lakukan pemeriksaan lebih lanjut.`;
+            var text = `Mata anda terindikasi +${plus}, untuk hasil yang lebih maksimal harap segera lakukan pemeriksaan lebih lanjut.`;
 
             $(".card-test").addClass("d-none");
             $(".card-plus").removeClass("d-none");
