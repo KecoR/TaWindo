@@ -24,6 +24,7 @@
                                 <div class="display-2">
                                     T Z O
                                 </div>
+                                <span>NOTE : Jika tulisan tidak kelihatan mohon langsung periksa ke optik atau dokter terdekat</span>
                             </div>
                             <div class="step step-2 d-none" data-id="7">
                                 <div class="display-3">

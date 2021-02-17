@@ -1,7 +1,6 @@
 <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-        <img class="navbar-brand-full app-header-logo" src="{{ asset('img/logo.png') }}" width="65"
-             alt="Infyom Logo">
+        <div style="text-transform: none; color:white; background-color:blue;">KACAMATA yonotrend</div>
         @if (\Auth::user())
             <a href="{{ url('/') }}"></a>
         @else

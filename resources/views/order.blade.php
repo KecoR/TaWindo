@@ -26,9 +26,6 @@
                                         <tr>
                                             <th width="5%">#</th>
                                             <th>Nama Pemesan</th>
-                                            <th>Umur</th>
-                                            <th>Jenis Frame</th>
-                                            <th>Jenis Lensa</th>
                                             <th width="10%">Aksi</th>
                                         </tr>
                                     </thead>
@@ -37,9 +34,6 @@
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $data->name }}</td>
-                                                <td>{{ $data->age }}</td>
-                                                <td>{{ $data->frame->name }}</td>
-                                                <td>{{ $data->lensa->name }}</td>
                                                 <td>
                                                     <a href="{{ route('detailOrderIndex', $data->id) }}" class="btn btn-primary"><i class="far fa-folder-open text-white"></i> Detail</a>
                                                 </td>
