@@ -242,6 +242,18 @@ class GlobalController extends Controller
         return view('mataplus');
     }
 
+    public function guestLensa() {
+        $lensa = Lensa::all();
+
+        return view('guestlensa', ['lensas' => $lensa]);
+    }
+
+    public function guestFrame() {
+        $frame = Frame::all();
+
+        return view('guestframe', ['frames' => $frame]);
+    }
+
     //Section Custom Function
     private function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

@@ -49,3 +49,6 @@ Route::post('/orderSave', 'GlobalController@orderSave')->name('orderSave');
 
 Route::get('/mataMinus', 'GlobalController@mataMinus')->name('mataMinus');
 Route::get('/mataPlus', 'GlobalController@mataPlus')->name('mataPlus');
+
+Route::get('/guestLensa', 'GlobalController@guestLensa')->name('guestLensa');
+Route::get('/guestFrame', 'GlobalController@guestFrame')->name('guestFrame');

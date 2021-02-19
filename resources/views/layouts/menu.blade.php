@@ -30,6 +30,16 @@
 
 @if (!\Auth::user())
     <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('guestFrame') }}" class="nav-link">
+        <i class=" fas fa-stream"></i><span>Daftar Frame</span>
+        </a>
+    </li>
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
+        <a href="{{ route('guestLensa') }}" class="nav-link">
+        <i class=" fas fa-stream"></i><span>Daftar Lensa</span>
+        </a>
+    </li>
+    <li class="side-menus {{ Request::is('*') ? 'active' : '' }}">
         <a href="{{ route('newOrderIndex') }}" class="nav-link">
         <i class=" fas fa-shopping-basket"></i><span>Pemesanan Kacamata</span>
         </a>
